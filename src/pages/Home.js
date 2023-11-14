@@ -1,21 +1,21 @@
 import React from "react";
 import AppLayout from "../components/AppLayout";
-import Tabs from "@mui/material/Tabs";
-import Tab from "@mui/material/Tab";
-import Box from "@mui/material/Box";
-import "./Home.css";
-import Toolbar from "../components/Toolbar";
+import SearchBar from "../components/SearchBar";
+import HotChart from "../components/HotChart";
+import NavBar from "../components/NavBar";
 
 const Home = () => {
-  const [value, setValue] = React.useState("one");
-
-  const handleChange = (event: React.SyntheticEvent, newValue: string) => {
-    setValue(newValue);
-  };
-
   return (
     <AppLayout>
-      <Toolbar />
+      <div id="search_bar_wrapper">
+        <SearchBar />
+      </div>
+      <div id="hot_chart_wrapper">
+        <HotChart />
+      </div>
+      <div id="nav_bar_wrapper">
+        <NavBar />
+      </div>
     </AppLayout>
   );
 };

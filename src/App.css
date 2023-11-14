@@ -1,3 +1,140 @@
+/* COMMON */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
+
+* {
+  font-family: "Nato Sans Korean";
+}
 body {
   background-color: rgb(40, 40, 40);
+  margin: 0;
+}
+
+/* APP LAYOUT */
+.nav_top {
+  position: sticky;
+  width: 100%;
+  padding: 1rem;
+  background-color: rgb(40, 40, 40);
+}
+.nav_bottom {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 2rem;
+  background-color: rgb(40, 40, 40);
+}
+.link {
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: white;
+}
+.link:hover {
+  color: rgb(158, 1, 201);
+  cursor: pointer;
+  width: 100%;
+}
+
+.MuiBreadcrumbs-separator {
+  color: white;
+  font-size: 25px;
+  position: relative;
+  top: -2px;
+}
+.my_page {
+  float: inline-end;
+}
+.cart {
+  margin-top: 0.2rem;
+  color: white;
+}
+.right {
+  position: absolute;
+  top: 0.2rem;
+  right: 0.5rem;
+}
+.cart_icon {
+  cursor: pointer;
+}
+
+/* HOME */
+#search_bar_wrapper {
+}
+#hot_chart_wrapper {
+  text-align: center;
+  margin-top: 10rem;
+}
+#nav_bar_wrapper {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* HOT CHART */
+#hot_nav_btn {
+  font-size: 1.2rem;
+}
+#hot_nav_btn:hover {
+  color: whitesmoke;
+}
+
+/* SEARCH BAR */
+.SearchBar {
+  position: absolute;
+  top: 12%;
+  left: 4%;
+  width: 96%;
+  text-align: center;
+}
+.search_bar {
+  width: 25%;
+  border: 4px solid #9c27b0;
+  border-radius: 15px;
+  font-size: 1.5rem;
+  padding: 0.7rem 2rem;
+  color: #818181;
+  font-family: "Noto Sans Korean";
+}
+@media screen and (max-width: 600px) {
+  .search_bar {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .search_bar {
+    width: 50%;
+  }
+}
+#search_btn {
+  position: relative;
+  top: -0.4rem;
+  right: 6rem;
+  font-size: 1.5rem;
+  border-radius: 10px;
+}
+.search_bar_typeit {
+  width: 95%;
+  text-align: center;
+  font-size: 1.5rem;
+  color: whitesmoke;
+  margin-bottom: 0.5rem;
+}
+@media screen and (max-width: 1000px) {
+  .search_bar_typeit {
+    display: none;
+  }
+}
+
+/* NAV BAR */
+.nav_link {
+  text-decoration: none;
+  font-family: "Alfa Slab One", serif;
+  font-weight: 400;
+  font-size: 3rem;
+  color: rgb(40, 40, 40);
+  -webkit-text-stroke: 2px rgb(231, 231, 231);
+}
+.nav_link:hover {
+  -webkit-text-stroke: 0px;
+
+  color: #9c27b0;
 }

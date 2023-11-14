@@ -1,7 +1,6 @@
-import { Breadcrumbs, Container, Grid } from "@mui/material";
+import { Breadcrumbs, Container } from "@mui/material";
 import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
 import React from "react";
-import "./AppLayout.css";
 import { Link, useNavigate } from "react-router-dom";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 import HomeIcon from "@mui/icons-material/Home";
@@ -30,9 +29,6 @@ const AppLayout = ({ children }) => {
               </Link>
               <Link className="link" to={"/edu"}>
                 EDUCATION
-              </Link>
-              <Link className="link" to={"/searchRes"}>
-                SEARCH
               </Link>
             </Breadcrumbs>
           </Grid2>
